@@ -1,16 +1,16 @@
 package model;
 
-import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
 
 public class CsvTransaction {
 
-    @CsvBindByName(column = "Year")
+    @CsvBindByPosition(position = 0)
     private int year;
 
-    @CsvBindByName(column = "Month")
+    @CsvBindByPosition(position = 1)
     private int month;
 
-    @CsvBindByName(column = "Currency")
+    @CsvBindByPosition(position = 2)
     private String currency;
 
     public int getYear() {
